@@ -25,7 +25,10 @@ jobs:
         with:
           args: >
             ${{ github.repository }}
-          # --more-args
+            --onboarding=false
+            --require-config=false
+            --semantic-commits=true
+            --log-level=debug
         env:
           RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
 ```
