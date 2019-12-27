@@ -10,6 +10,11 @@ jobs:
       - name: Renovate
         uses: djiit/action-renovate@master
         with:
-          args: ${{ github.repository }}
+          args: >-
+            ${{ github.repository }}
+            --onboarding=false
+            --require-config=false
+            --semantic-commits=true
+            --log-level=debug
         env:
           RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
