@@ -1,4 +1,4 @@
-FROM renovate/renovate
+FROM renovate/renovate:19
 
 LABEL version="1.0.0"
 LABEL maintainer="Julien Tanay"
